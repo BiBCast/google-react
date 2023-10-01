@@ -14,7 +14,9 @@ export function Header() {
         </div>
       </div>
       <div className="header__icon">
-        <a href="#">1</a>
+        <div>
+          <img src={squareDot} />
+        </div>
       </div>
     </div>
   );
