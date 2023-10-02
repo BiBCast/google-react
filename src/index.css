@@ -6,7 +6,9 @@ html,
 body {
   box-sizing: border-box;
   font-family: arial, sans-serif;
-  font-size: x-large;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #9aa0a6;
 }
 
 a,
@@ -14,7 +16,7 @@ a:visited {
 }
 
 #root {
-  background: grey;
+  background: #202124;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -22,11 +24,12 @@ a:visited {
 
 .header {
   display: flex;
-  height: 10%;
+  height: 8%;
+  color: white;
   width: 100%;
   justify-content: end;
   gap: 1%;
-  margin-bottom: 8%;
+  margin-bottom: 9.5%;
   & div {
     display: flex;
     justify-content: center;
@@ -61,7 +64,7 @@ a:visited {
   }
 }
 .header__icon {
-  margin-right: 10%;
+  margin-right: 2%;
   & img {
     height: 1em;
   }
@@ -70,9 +73,9 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3%;
+  margin-bottom: 1.5rem;
   & img {
-    height: 4rem;
+    height: 6rem;
   }
 }
 
@@ -81,21 +84,26 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 
   & .search_bar__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
-    height: 1em;
-    border: 1px solid red;
-    border-radius: 15px;
+    width: 37rem;
+    height: 0.6rem;
+    border: 1px solid #5f6368;
+    border-radius: 25px;
     padding: 1%;
     gap: 0.5rem;
   }
-  & .icon {
+  & .icon g {
+    color: #9aa0a6;
+    fill: #9aa0a6;
+    stroke: #9aa0a6;
+  }
+  & .icon svg {
     height: 1em;
-    padding-inline: 0.5rem;
   }
   & .input {
     width: 100%;
@@ -103,11 +111,15 @@ a:visited {
     background: transparent;
     border: 1px solid black;
     font-size: inherit;
+    color: inherit;
+  }
+  & .gray {
+    color: #9aa0a6;
   }
   & .container__separator {
     height: 100%;
     width: 0px;
-    border: 1px solid red;
+    border: 1px solid #45484c;
     margin-left: 0.5rem;
   }
 }
@@ -119,8 +131,9 @@ a:visited {
   gap: 1rem;
   padding-top: 1%;
   & > div {
-    border: 1px solid red;
-    padding: 0.2rem 0.5rem;
+    background: #303134;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
     text-transform: capitalize;
   }
 }
@@ -130,15 +143,17 @@ a:visited {
   justify-content: center;
   align-items: center;
   padding-top: 1%;
+  color: #9aa0a6;
   & > a {
     font-weight: 700;
     text-decoration: none;
+    color: #8ab4f8;
   }
   & > a:hover {
     text-decoration: underline;
   }
   & > a:visited {
-    color: inherit;
+    color: #8ab4f8;
   }
 }
 
@@ -149,11 +164,19 @@ a:visited {
   flex-direction: column;
   & .footer__row {
     display: flex;
+    background: #171717;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    padding: 0.3rem;
+    height: 2.5rem;
   }
   & .row__element > span {
     padding-inline: 0.5rem;
   }
+}
+.left {
+  justify-content: start !important;
+}
+.border_bottom {
+  border-bottom: 1px solid #3c4043;
 }
