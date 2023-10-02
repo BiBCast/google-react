@@ -8,6 +8,13 @@ export function SearchBar() {
         <div className="container__separator"></div>
         <div className="icon">icon</div>
       </div>
+      <div className="search_bar__button">
+        <div>Google search</div>
+        <div>i'm feeling lucky</div>
+      </div>
+      <div className="search_bar__language">
+        Google offered in :<a href="#">italiano</a>
+      </div>
     </div>
   );
 }
