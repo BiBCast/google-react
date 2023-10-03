@@ -12,7 +12,7 @@ export function Glass() {
         transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
         fill="currentColor"
         stroke="currentColor"
-        stroke-width="600"
+        strokeWidth="600"
       >
         <path
           d="M4470 11700 c-1261 -110 -2368 -843 -2959 -1961 -414 -785 -529
