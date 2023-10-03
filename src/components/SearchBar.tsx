@@ -33,15 +33,17 @@ export function SearchBar() {
           onChange={handleSearch}
         />
         {search !== "" && (
-          <button
-            type="button"
-            onClick={handleClearButton}
-            className="icon cancel"
-          >
-            X
-          </button>
+          <>
+            <button
+              type="button"
+              onClick={handleClearButton}
+              className="icon cancel"
+            >
+              X
+            </button>
+            <div className="container__separator"></div>
+          </>
         )}
-        <div className="container__separator"></div>
         <div className="icon">
           <Tv />
         </div>
