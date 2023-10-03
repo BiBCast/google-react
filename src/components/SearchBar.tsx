@@ -16,6 +16,9 @@ export function SearchBar() {
     searchParams.append("q", search);
     window.location.href = baseUrl + searchParams.toString();
   }
+  function handleClearButton() {
+    setSearch("");
+  }
 
   return (
     <form className="search_bar" onSubmit={onSubmit}>
@@ -23,10 +26,21 @@ export function SearchBar() {
         <div className="icon google_icon">
           <Glass />
         </div>
-        <input className="input" type="search" onChange={handleSearch} />
-        <button type="button" className="icon cancel">
-          X
-        </button>
+        <input
+          className="input"
+          value={search}
+          type="search"
+          onChange={handleSearch}
+        />
+        {search !== "" && (
+          <button
+            type="button"
+            onClick={handleClearButton}
+            className="icon cancel"
+          >
+            X
+          </button>
+        )}
         <div className="container__separator"></div>
         <div className="icon">
           <Tv />
