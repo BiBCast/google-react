@@ -3,7 +3,7 @@ export function Footer() {
     <div className="footer">
       <div className="footer__row  border_bottom">
         <div className="row__element ">
-          <span>Italy</span>
+          <span className="no_underline">Italy</span>
         </div>
       </div>
       <div className="footer__row">

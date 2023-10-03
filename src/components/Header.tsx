@@ -1,4 +1,5 @@
-import squareDot from "../assets/caramel_983385.png";
+import { GoogleProfile } from "../assets/GoogleProfile";
+import { SquareDot } from "../assets/SquareDot";
 export function Header() {
   return (
     <div className="header">
@@ -10,12 +11,12 @@ export function Header() {
       </div>
       <div className="header__button">
         <div>
-          <img src={squareDot} />
+          <SquareDot />
         </div>
       </div>
       <div className="header__icon">
         <div>
-          <img src={squareDot} />
+          <GoogleProfile />
         </div>
       </div>
     </div>
